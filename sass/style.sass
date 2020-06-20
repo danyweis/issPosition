@@ -3,6 +3,17 @@
     padding: 0
     box-sizing: border-box
 
+.topText, .downText
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    line-height: 250%
+
+.topText
+    p
+        text-align: center
+
 .container
     max-width: 100%
     position: relative
@@ -14,7 +25,15 @@
 .iss
     position: absolute
     width: 3%
-    border: 2px solid #ff0000
+    border: 1px solid #ff0000
     border-radius: 50%
-    background: #00000070
+    background: #ffffff40
     transform: translate(-50%, -50%)
+    filter: drop-shadow(5px 5px 5px #000000)
+
+.downText
+    h2
+        font-size: 2em
+    ul
+        list-style-type: none
+        font-size: 1.5em

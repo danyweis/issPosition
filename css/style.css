@@ -5,6 +5,27 @@
           box-sizing: border-box;
 }
 
+.topText, .downText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 250%;
+}
+
+.topText p {
+  text-align: center;
+}
+
 .container {
   max-width: 100%;
   position: relative;
@@ -18,9 +39,20 @@
 .iss {
   position: absolute;
   width: 3%;
-  border: 2px solid #ff0000;
+  border: 1px solid #ff0000;
   border-radius: 50%;
-  background: #00000070;
+  background: #ffffff40;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(5px 5px 5px #000000);
+          filter: drop-shadow(5px 5px 5px #000000);
+}
+
+.downText h2 {
+  font-size: 2em;
+}
+
+.downText ul {
+  list-style-type: none;
+  font-size: 1.5em;
 }
