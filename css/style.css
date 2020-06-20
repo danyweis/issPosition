@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+}
+
+.iss {
+  position: absolute;
+  width: 3%;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+  background: #00000070;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
